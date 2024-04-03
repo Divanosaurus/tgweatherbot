@@ -5,7 +5,7 @@ import requests
 import natasha
 from config import open_weather_token
 
-bot = telebot.TeleBot('6945787460:AAE0AIrZ21DoUX0Ddl1MX_2gx4bjQpYRK6s')
+bot = telebot.TeleBot('   ')
 
 start_txt = "Привет! Код работает! Теперь можешь запросить прогноз погоды"  # тут у нас приветственное сообщение
 
@@ -18,7 +18,7 @@ def start(message):
 def weather(message):
     city = message.text # тут берется название города из сообщения
 
-    url = 'https://api.openweathermap.org/data/2.5/weather?q='+city+'&units=metric&lang=ru&appid=3f9c6082e1b7435d85cb9f877540af4a'
+    url = 'https://api.openweathermap.org/data/2.5/weather?q='+city+'&units=metric&lang=ru&appid=    '
 
 
     weather_data = requests.get(url).json()
